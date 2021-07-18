@@ -1,0 +1,64 @@
+{
+  "name": "Typing-Game",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "repository": "https://github.com/kevin-grylls/Typing-Game.git",
+  "author": "kevin-grylls <eilgwon88@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "TypingGame",
+    "MVC",
+    "Observable",
+    "Routing",
+    "SPA"
+  ],
+  "scripts": {
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint src --fix",
+    "test": "jest",
+    "test:models": "jest --verbose ./models",
+    "test:views": "jest --verbose ./views",
+    "test:controllers": "jest --verbose ./controllers"
+  },
+  "husky": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.7",
+    "@testing-library/jest-dom": "^5.14.1",
+    "babel-jest": "^27.0.6",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "core-js": "2",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest-dom": "^3.9.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "gh-pages": "^3.2.3",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^6.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.0.0",
+    "mini-css-extract-plugin": "^1.6.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "prettier": "^2.3.2",
+    "regenerator-runtime": "^0.13.7",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "terser-webpack-plugin": "^5.1.4",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
