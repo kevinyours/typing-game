@@ -1,7 +1,7 @@
 # Typing Game
 
 ### Demo
-https://kevin-grylls.github.io/typing-game/
+https://kevinyours.github.io/typing-game
 
 ### Directory
 
